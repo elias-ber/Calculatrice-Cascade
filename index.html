@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link href="styles.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="calculatrice"> <!--Boîte de l'ensemble de la calculatrice-->
+        <div class="interface"> <!--Boîte du fond de l'écran de la calculatrice-->
+            <input type="text" id="ecran" readonly> <!--Zone de texte qui représente l'écran de la calculatrice-->
+        </div>
+        <div id="boutons"> <!--Boîte de l'ensemble des boutons de la calculatrice-->
+            <table> <!--Table interprétant le pavé numérique de la calculatrice-->
+                <tbody>
+                <tr> <!--Ligne de deux colonnes (elles-même de deux collones)-->
+                  <td colspan="2"><button class="lettre" id="C" onclick="effacer()">C</button></td> <!--Bouton Effacer qui appelle la fonction effacer()-->
+                  <td colspan="2"><button class="lettre" id="F" onclick="fin()">F</button></td> <!--Bouton Fin qui appelle la fonction fin()-->
+                </tr>
+                <tr> <!--Ligne de quatre colonnes-->
+                  <td><button class="nombre" onclick="ajoutChiffre('7')">7</button></td> <!--Bouton qui ajoute un chiffre en appelant a fonction ajoutChiffre()-->
+                  <td><button class="nombre" onclick="ajoutChiffre('8')">8</button></td>
+                  <td><button class="nombre" onclick="ajoutChiffre('9')">9</button></td>
+                  <td><button class="action" onclick="ajoutOperateur('+')">+</button></td> <!--Bouton qui ajoute un opérateur en appelant a fonction ajoutOperateur()-->
+                </tr>
+                <tr> <!--Ligne de quatre colonnes-->
+                  <td><button class="nombre" onclick="ajoutChiffre('4')">4</button></td>
+                  <td><button class="nombre" onclick="ajoutChiffre('5')">5</button></td>
+                  <td><button class="nombre" onclick="ajoutChiffre('6')">6</button></td>
+                  <td><button class="action" onclick="ajoutOperateur('-')">-</button></td> <!--Bouton qui ajoute un opérateur en appelant a fonction ajoutOperateur()-->
+                </tr>
+                <tr> <!--Ligne de quatre colonnes-->
+                  <td><button class="nombre" onclick="ajoutChiffre('1')">1</button></td>
+                  <td><button class="nombre" onclick="ajoutChiffre('2')">2</button></td>
+                  <td><button class="nombre" onclick="ajoutChiffre('3')">3</button></td>
+                  <td><button class="action" onclick="ajoutOperateur('*')">×</button></td> <!--Bouton qui ajoute un opérateur en appelant a fonction ajoutOperateur()-->
+                </tr>
+                <tr> <!--Ligne de quatre colonnes-->
+                  <td><button class="nombre" onclick="ajoutChiffre('0')">0</button></td>
+                  <td><button class="action" onclick="ajoutChiffre('.')">.</button></td>
+                  <td><button class="action" onclick="calcul()">=</button></td>
+                  <td><button class="action" onclick="ajoutOperateur('/')">÷</button></td> <!--Bouton qui ajoute un opérateur en appelant a fonction ajoutOperateur()-->
+                </tr>
+              </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+</html>

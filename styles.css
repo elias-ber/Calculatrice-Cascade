@@ -1,0 +1,125 @@
+/*Styles de l'élément (boîte/div) de class "calculatrice"*/
+.calculatrice {
+    width: 320px;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Styles de l'élément (boîte/div) de class "interface"*/
+.interface {
+    width: 320px;
+    height: 75px;
+    margin-bottom: 10px;
+    padding: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Styles de l'élément (input) d'ID "ecran"*/
+#ecran {
+    margin-top: 10px;
+    margin-right: 5px;
+    position: center;
+    padding: none;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: black;
+    outline: none;
+    text-align: right;
+    width: 300px;
+}
+
+/*Styles de l'élément (boîte/div) d'ID "boutons"*/
+#boutons {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: none;
+    width: 320px;
+}
+
+/*Styles des boutons de l'élément (boîte/div) d'ID "boutons"*/
+#boutons button {
+    width: 75px;
+    height: 50px;
+    margin: 0px;
+    font-size: 25px;
+    border: none;
+    background: transparent;
+}
+
+/*Styles des boutons de class "nombre" de l'élément (boîte/div) d'ID "boutons", lorsqu'ils sont survolés*/
+#boutons .nombre:hover {
+    background-color: rgba(0, 0, 0, 0.100);
+    transition-duration: 0.2s;
+}
+
+/*Styles des boutons de class "action" de l'élément (boîte/div) d'ID "boutons", lorsqu'ils sont survolés*/
+#boutons .action:hover {
+    background-color: rgba(0, 155, 255, 0.25);
+    transition-duration: 0.2s;
+}
+
+/*Styles du bouton d'ID "C" de l'élément (boîte/div) d'ID "boutons", lorsqu'il est survolé*/
+#boutons #C:hover {
+    background-color: rgba(255, 155, 0, 0.25);
+    transition-duration: 0.2s;
+}
+
+/*Styles du bouton d'ID "F" de l'élément (boîte/div) d'ID "boutons", lorsqu'il est survolé*/
+#boutons #F:hover {
+    background-color: rgba(255, 0, 0, 0.25);
+    transition-duration: 0.2s;
+}
+
+/*Styles des boutons de class "lettre" de l'élément (boîte/div) d'ID "boutons"*/
+#boutons .lettre {
+    width: 150px;
+    height: 50px;
+    margin: none;
+    padding: none;
+}
+
+/*Styles du corps de la page*/
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://gifdb.com/images/thumbnail/confused-teacher-john-travolta-5w5ai5z3deqou95f.gif);
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Styles du corps du (ou des potentiels) tableau de la page*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    }
+
+/*Styles des cellules du (ou des potentiels) tableau de la page*/
+td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0px;
+    text-align: center;
+    border-radius: 5px;
+}
